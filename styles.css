@@ -1,25 +1,23 @@
 body {
     background-image: conic-gradient(rgb(187, 70, 70), rgb(196, 149, 47), rgb(52, 121, 61),
-    rgb(28, 65, 100), rgb(185, 77, 77));
-    cursor:pointer;
+            rgb(28, 65, 100), rgb(185, 77, 77));
+    cursor: pointer;
 }
 
 #title-container-id {
     margin-top: 40px;
     height: 80px;
     width: 100%;
-    
     background-color: darkred;
     text-align: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
-   align-items: center;
-   outline: none;
-   
-   border-color: #9ecaed;
-   box-shadow: 0 0 10px #c4bdbc;
+    align-items: center;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #c4bdbc;
 }
-#modal_body_data{
+
+#modal_body_data {
     text-align: center;
 }
 
@@ -27,8 +25,8 @@ body {
     font-family: "Times New Roman", Times, serif;
     color: white;
     padding-top: 5px;
-    font-size:200%;
-    
+    font-size: 200%;
+
 }
 
 .poles {
@@ -39,7 +37,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .poles-bottom {
@@ -51,18 +49,16 @@ body {
 
 }
 
- #poles_container_row {
+#poles_container_row {
     text-align: center;
     justify-content: center;
-} 
+}
 
 #poles-container {
     padding-top: 2%;
     padding-left: 4%;
     padding-right: 2%;
-    
-    margin-top: 40px; 
-    
+    margin-top: 40px;
     width: 100%;
     box-shadow: 0 0 10px #42af27;
 
@@ -71,8 +67,6 @@ body {
 #pole1 {
     display: flex;
     flex-direction: column-reverse;
-    position: absolute;
-    bottom: 0px;
 }
 
 #pole2 {
@@ -91,9 +85,9 @@ body {
     text-align: center;
     color: darkred;
     margin-top: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
 }
 
 .header-buttons {
@@ -105,12 +99,12 @@ body {
     color: white;
     border-radius: 10%;
     align-items: center;
-    display:flex;
+    display: flex;
     border-color: rgb(196, 74, 58);
     border-style: double;
     flex-direction: column;
-   align-items: center;
-   
+    align-items: center;
+
 }
 
 .restart_button {
@@ -125,7 +119,7 @@ body {
     font-size: 20px;
     margin-top: 20px;
     font-family: "Times New Roman", Times, serif;
-    
+
 }
 
 .restart_button:hover {
@@ -139,14 +133,16 @@ body {
     border-style: double;
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
-  
-    
-}
-#restart_button_container{
-margin-top: 20px;
-padding-bottom: 20px;
+
 
 }
+
+#restart_button_container {
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
 .disks {
     display: flex;
     flex-direction: column;
