@@ -36,7 +36,7 @@ body {
     background-color: rgb(190, 29, 29);
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
 }
 
@@ -63,24 +63,6 @@ body {
     box-shadow: 0 0 10px #42af27;
 
 }
-
-#pole1 {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-#pole2 {
-    display: flex;
-    flex-direction: column-reverse;
-
-}
-
-#pole3 {
-    display: flex;
-    flex-direction: column-reverse;
-
-}
-
 #header_buttons_container {
     text-align: center;
     color: darkred;

@@ -5,7 +5,7 @@ $(document).ready(function () {
 	var totaldisks = $('#pole1 div').length;
 	var score = 0;
 	var movecount = 0;
-	var maxTicks = 110;
+	var maxTicks = 10;
 	var tickCount = 0;
 
 
@@ -30,15 +30,12 @@ $(document).ready(function () {
 		$("#modal_body_data").html("YOUR SCORES ARE = " + score);
 		$("#modal-title-id").html("Game Over");
 		$("#myModal").modal("show");
-		if ($('body').click(function (e) {
-			e.preventDefault();
-			e.stopPropagation();
-		}));
 	}
 
 
 	function assign_values_to_disks() {
-		for (let i = 1; i <= 9; i++) $(`#disk${i}`).val(i);
+		for (let i = 1; i <= 9; i++) 
+		$(`#disk${i}`).val(i);
 	}
 
 	function declare_winner() {
@@ -56,17 +53,16 @@ $(document).ready(function () {
 			start: function () {
 				parent1 = $(this).parent().attr('id');
 				newchild = $(this).val();
-				if ($(this).attr('id') == $("#" + parent1 + " div:nth-last-child(2)").attr("id")) {
-					$("#" + parent1 + " div:nth-last-child(2)").css("visibility", "hidden");
+				second_last=$("#" + parent1 + " div:nth-last-child(2)");
+				if ($(this).attr('id') == second_last.attr("id")) {
+					second_last.css("visibility", "hidden");
 					($(this).css("cursor", "grabbing"));
 					return true;
 				}
-				else
 					return false;
 			}
 		});
 	}
-
 
 	function dropabble_poles() {
 		for (let i = 1; i <= 3; i++) {
@@ -82,7 +78,6 @@ $(document).ready(function () {
 			})
 		}
 		not_dropped_on_poles();
-
 	}
 
 	function not_dropped_on_poles() {
