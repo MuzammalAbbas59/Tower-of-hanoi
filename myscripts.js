@@ -5,16 +5,15 @@ $(document).ready(function () {
 	var totaldisks = $('#pole1 div').length;
 	var score = 0;
 	var movecount = 0;
-	var maxTicks = 10;
+	var maxTicks = 200;
 	var tickCount = 0;
-
 
 	assign_values_to_disks();
 	dropabble_poles();
 	draggable_disks();
 	reload_page_onclick();
 	allow_touch_movements();
-
+	
 	function updateTime() {
 		if (tickCount >= maxTicks) {
 			end_the_game();
@@ -24,14 +23,12 @@ $(document).ready(function () {
 	};
 	var myInterval = setInterval(updateTime, 1000);
 
-
 	function end_the_game() {
 		clearInterval(myInterval);
 		$("#modal_body_data").html("YOUR SCORES ARE = " + score);
 		$("#modal-title-id").html("Game Over");
 		$("#myModal").modal("show");
 	}
-
 
 	function assign_values_to_disks() {
 		for (let i = 1; i <= 9; i++) 
@@ -45,7 +42,6 @@ $(document).ready(function () {
 		$("#modal-title-id").html("WINNER");
 		$("#myModal").modal("show");
 	}
-
 
 	function draggable_disks() {
 		$(".disks").draggable({
@@ -110,7 +106,6 @@ $(document).ready(function () {
 
 	function touchHandler(event) {
 		var touch = event.changedTouches[0];
-
 		var simulatedEvent = document.createEvent("MouseEvent");
 		simulatedEvent.initMouseEvent({
 			touchstart: "mousedown",
@@ -120,9 +115,7 @@ $(document).ready(function () {
 			touch.screenX, touch.screenY,
 			touch.clientX, touch.clientY, false,
 			false, false, false, 0, null);
-
 		touch.target.dispatchEvent(simulatedEvent);
-
 	}
 
 	function allow_touch_movements() {

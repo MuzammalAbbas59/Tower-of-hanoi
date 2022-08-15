@@ -3,7 +3,6 @@ body {
             rgb(28, 65, 100), rgb(185, 77, 77));
     cursor: pointer;
 }
-
 #title-container-id {
     margin-top: 40px;
     height: 80px;
@@ -16,11 +15,9 @@ body {
     border-color: #9ecaed;
     box-shadow: 0 0 10px #c4bdbc;
 }
-
 #modal_body_data {
     text-align: center;
 }
-
 #game-title {
     font-family: "Times New Roman", Times, serif;
     color: white;
@@ -28,7 +25,6 @@ body {
     font-size: 200%;
 
 }
-
 .poles {
     height: 230px;
     width: 30px;
@@ -39,7 +35,6 @@ body {
     flex-direction: column-reverse;
 
 }
-
 .poles-bottom {
     height: 15px;
     width: 100%;
@@ -48,12 +43,10 @@ body {
     margin-bottom: 20%;
 
 }
-
 #poles_container_row {
     text-align: center;
     justify-content: center;
 }
-
 #poles-container {
     padding-top: 2%;
     padding-left: 4%;
@@ -63,6 +56,7 @@ body {
     box-shadow: 0 0 10px #42af27;
 
 }
+
 #header_buttons_container {
     text-align: center;
     color: darkred;
@@ -71,7 +65,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .header-buttons {
     width: 85px;
     margin: 0 auto;
@@ -101,24 +94,16 @@ body {
     font-size: 20px;
     margin-top: 20px;
     font-family: "Times New Roman", Times, serif;
-
 }
-
 .restart_button:hover {
-    width: 110px;
-    height: 40px;
     text-align: center;
     background-color: rgb(12, 36, 3);
     color: rgb(240, 230, 230);
     border-radius: 10%;
     border-color: rgb(240, 234, 233);
     border-style: double;
-    font-size: 20px;
     font-family: "Times New Roman", Times, serif;
-
-
 }
-
 #restart_button_container {
     margin-top: 20px;
     padding-bottom: 20px;
@@ -135,49 +120,38 @@ body {
     z-index: 1;
     user-select: none
 }
-
-
 .disks[data-id='1'] {
     background-color: rgb(6, 48, 48);
     width: 35px;
 }
-
-
 .disks[data-id='2'] {
     background-color: rgb(138, 117, 2);
     width: 42px;
 }
-
 .disks[data-id='3'] {
     background-color: rgb(24, 50, 167);
     width: 49px;
 }
-
 .disks[data-id='4'] {
     background-color: rgb(209, 73, 20);
     width: 56px;
 }
-
 .disks[data-id='5'] {
     background-color: rgb(28, 187, 23);
     width: 63px;
 }
-
 .disks[data-id='6'] {
     background-color: rgb(202, 29, 202);
     width: 70px;
 }
-
 .disks[data-id='7'] {
     background-color: rgb(27, 139, 139);
     width: 77px;
 }
-
 .disks[data-id='8'] {
     background-color: rgb(172, 14, 67);
     width: 84px;
 }
-
 .disks[data-id='9'] {
     background-color: rgb(39, 102, 23);
     width: 91px;
